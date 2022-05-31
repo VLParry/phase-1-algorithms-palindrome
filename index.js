@@ -1,9 +1,22 @@
-function isPalindrome(word) {
-  // Write your algorithm here
-}
+
+  function isPalindrome(word) {
+    for (let startIndex = 0; startIndex < word.length / 2; startIndex++) {
+      const endIndex = word.length - 1 - startIndex;
+      if (word[startIndex] !== word[endIndex]) {
+        
+        return false;
+      }
+    }
+  
+   
+    return true;
+  }
+
 
 /* 
   Add your pseudocode here
+  1-declare a function called 'isPalindrome'  
+  2-
 */
 
 /*
